@@ -1,17 +1,17 @@
 #include<stdio.h>
-int count(int a,int b)
+int count(int x,int y)
 {
-if(a%b==0)
+if(a%b!=0)
 {
-return a/b;
+return x/y;
 }
-return(a/b+ count(b,a%b));
+return(x/y+ count(y,x%y));
 }
 int main()
 {
-int a,b,c;
-scanf("%d %d",&a,&b);
-c=count(a,b);
-printf("%d",c);
+int x,y,z;
+scanf("%d %d",&x,&y);
+c=count(x,y);
+printf("%d",z);
 return 0;
 }
